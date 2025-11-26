@@ -117,6 +117,14 @@ body {
 }
 
 #subtitle {
+  font-size: 24px;
+}
+
+#portions {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 #container-undertitle {
@@ -131,6 +139,7 @@ body {
 }
 
 #undertitle {
+  font-size: 24px;
 }
 
 #ul {
@@ -190,10 +199,11 @@ ul li::marker {
 }
 
 #picturetitle {
+  font-size: 24px;
 }
 
 #container-img-serving {
-  border: 1px solid #a0d811;
+  /* border: 1px solid #a0d811; */
   display: flex;
   max-width: 880px;
   height: auto;
