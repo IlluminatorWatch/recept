@@ -67,6 +67,7 @@ body {
 
 #container-title {
   /* margin-top: 10px; */
+  display: inline-block;
 }
 
 #title {
@@ -179,6 +180,7 @@ li span {
 }
 
 ol li {
+  display: inline-block;
   /* border: 1px solid #a0d811; */
 }
 
@@ -273,6 +275,30 @@ ul li::marker {
   /* height: auto; */
   margin: 0;
   padding: 0;
+}
+
+#footer-title {
+  width: 92%;
+  /* height: 550px; */
+  margin-top: -5%;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-bottom: -1%;
+  font-size: 18px;
+  /* padding: 0; */
+  /* border: 1px solid #a10000; */
+}
+#address {
+  display: inline-block;
+  /* width: 92%; */
+  /* height: 550px; */
+  /* margin-top: -5%; */
+  /* margin-left: 4%; */
+  /* margin-right: 4%; */
+  /* margin-bottom: -1%; */
+  /* font-size: 18px; */
+  /* padding: 0; */
+  /* border: 1px solid #a10000; */
 }
 
 /*  `´nb@NB${}[]\|| */
