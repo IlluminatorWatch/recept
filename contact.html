@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="recept.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <button
+          onclick="document.getElementById('viewModal').showModal()"
+          class="btn-open"
+        >
+          Ge oss en recension
+        </button>
+        <dialog id="viewModal">
+          <div class="modal-inner">
+            <div class="modal-header">
+              <h2>Hjälp oss gärna att bli bättre!</h2>
+              <button
+                type="button"
+                onclick="document.getElementById('viewModal').close()"
+                class="btn-close"
+                aria-label="Stäng"
+              >
+                Close
+              </button>
+            </div>
+            <form
+              action="mailto:epost@epost.se"
+              method="POST"
+              class="review-form"
+              autocomplete="email"
+              placeholder="a@a.se"
+            >
+              <label for="user-name">Ditt namn</label>
+              <br />
+              <input
+                type="text"
+                name="username"
+                id="user-name"
+                autocomplete="name"
+                placeholder="John Doe"
+                required
+              />
+              <br />
+              <label for="user-email">E-post</label>
+              <br />
+              <input
+                type="email"
+                name="email"
+                id="user-email"
+                autocomplete="email"
+                placeholder="a@a.se"
+                required
+              />
+              <br />
+
+              <label for="visit-date">När vill ni besöka oss?</label>
+              <br />
+              <input type="date" id="visit-date" name="visit-date" required />
+              <br />
+              <label for="guests" name="guests">Hur många är ni?</label>
+              <br />
+              <select name="guests" id="guests" required>
+                <option value="1">en person</option>
+                <option value="2">två personer</option>
+                <option value="3">tre personer</option>
+                <option value="4">fyra personer</option>
+              </select>
+              <br />
+              <label for="rating" name="">Hur nöjda är är ni med oss?</label>
+              <br />
+              <input value="5" type="range" id="rating" name="rating" min="0"
+              max="10" step="1" list="rating-markers>
+              <datalist id="rating-markers">
+                <br />
+                <option value="0" class="option-left">0</option>
+                <!-- <option value="5">5</option> -->
+                <option value="10" class="option-right">10</option>
+              </datalist>
+              <div></div>
+              <br />
+              <div>Har ni varit här tidigare?</div>
+              <br />
+              <br />
+              <label for="visit-no"
+                >Nej det är inte första gången som vi är här</label
+              >
+              <!-- <br /> -->
+              <input
+                type="radio"
+                id="visit-no"
+                name="visit-frequency"
+                class="radio-option"
+                value="no"
+              />
+              <!-- <span>&#10063;</span> -->
+              <span>&#10061;</span>
+              <!-- <span>&#9675;</span> -->
+              <!-- <span>&middot;</span> -->
+              <!-- <br /> -->
+              <!-- <div></div> -->
+              <br />
+              <div></div>
+              <br />
+              <label for="visit-yes">Ja det är första gången</label>
+              <!-- <br /> -->
+              <input
+                type="radio"
+                id="visit-yes"
+                name="visit-frequency"
+                class="radio-option"
+                value="yes"
+              />
+              <span>&#10061;</span>
+              <!-- <span>&#9675;</span> -->
+              <!-- <span>&middot;</span> -->
+              <!-- <span>&#10063;</span> -->
+              <!-- <br /> -->
+              <br />
+              <!-- <div></div> -->
+              <div></div>
+              <div></div>
+              <fieldset class="checkbox-group" required>
+                <legend>Hur hittade ni oss?</legend>
+                <label>
+                  <input type="checkbox" name="source" value="google" />
+                  <span>&#10063;</span>
+                  google</label
+                >
+                <label>
+                  <input type="checkbox" name="source" value="friends" />
+                  <span>&#10063;</span>
+                  friends</label
+                >
+                <label>
+                  <input type="checkbox" name="source" value="social" />
+                  <span>&#10063;</span>
+                  sociala medier</label
+                >
+                <label>
+                  <input type="checkbox" name="source" value="review" />
+                  <span>&#10063;</span>tidningsrecension</label
+                >
+              </fieldset>
+              <br />
+              <br />
+              <br />
+              <label for="comments">övrigt</label>
+              <br />
+              <textarea name="comments" id="comments" rows="3"></textarea>
+              <br />
+              <br />
+              <br />
+              <!-- <div></div> -->
+              <div class="form-group">
+                <label for="consent"
+                  >Godkäner du att vi tar emot dina uppgifter i enlighet med
+                  GDPR?
+                  <input type="checkbox" name="consent" id="consent" required />
+                  <span>&#10063;</span>
+                  <!-- <span>&#9723;</span> -->
+                  <!-- <span>&#9634;</span> -->
+                  <!-- <span>&#9633;</span> -->
+                </label>
+              </div>
+              <br />
+              <button type="submit" class="btn-primary">Skicka bokning</button>
+            </form>
+          </div>
+        </dialog>
+      </section>
+    </main>
+  </body>
+</html>
